@@ -1,0 +1,178 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Cairo', sans-serif;;
+}
+ul{
+    list-style: none;
+}
+.container{
+    margin-left:auto;
+    margin-right:auto;
+    padding-left: 15px;
+    padding-right:15px;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* small screens*/
+
+@media (min-width:768px) {
+    .container{
+        width:750px
+    }
+    
+}
+
+/* medium screens*/
+
+@media (min-width:992px) {
+    .container{
+        width:970px
+    }
+    
+}
+
+/*large screens */
+
+@media (min-width:1200) {
+    .container{
+        width:1170px
+    }
+}
+
+.pricing{
+    background-color: #E6F2FA;
+    padding:70px 0
+}
+
+.box{
+    background-color: #fff;
+    padding:30px 20px;
+    border-radius:7px;
+    box-shadow: 0 3px 5px 0px rgb(0 0 0 / 6%);
+    width:25%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width:767px) {
+    .box{
+        width:100%;
+    }
+    
+}
+.box:nth-of-type(2){
+    transform: translateY(20px);
+    margin:0 20px
+
+}
+@media (max-width:767px) {
+    .box:nth-of-type(2){
+        transform: translateY(0);
+        margin: 20px 0
+    
+    }
+    
+}
+
+.box:nth-of-type(3){
+    transform: translateY(40px);
+
+}
+
+@media (max-width:767px) {
+    .box:nth-of-type(3){
+        transform: translateY(0);    
+    }
+    
+}
+.box h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 300;
+
+}
+
+
+.box .title{
+    position: relative;
+    left:-26px;
+    padding:7px 5px;
+    color:#fff;
+    font-weight: bold;
+    width:120px;
+    border-radius: 0 15px 15px 0;
+    z-index: 2;
+
+
+}
+
+.title:before{
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 0px;
+    border-width: 3px;
+    z-index: -5;
+    border-style: solid;
+}
+.basic:before{
+    border-color: transparent #13b395 #13b395 transparent;
+}
+
+.premium:before{
+    border-color:  transparent #0e1c87 #0e1c87 transparent;
+
+}
+.standard:before{
+    border-color:  transparent #dbba4e #dbba4e transparent;
+
+}
+
+.basic{
+    background-color: #13C8A6;
+}
+
+.premium{
+    background-color: #515ba7 ;
+
+}
+
+.standard{
+    background-color: #EFCB53;
+
+}
+
+
+.details{
+    margin:30px 0;
+    color:#777
+}
+
+.details p{
+    margin-bottom: 15px;
+}
+
+.details ul li{
+    margin-bottom: 10px;
+}
+
+.button{
+    margin:20px 0
+}
+
+.button input[type="button"]{
+    padding:6px 20px;
+    color:#fff;
+    border:none;
+    border-radius: 7px;
+    transition: 0.5s linear;
+    
+}
+
+.button input[type="button"]:hover{
+    transform: scale(1.1);
+}
